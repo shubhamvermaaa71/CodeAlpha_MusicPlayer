@@ -29,15 +29,6 @@ A feature-rich music player that automatically extracts song metadata and displa
 - Track Navigation
 - Real-Time Progress Tracking
 
-## Future Improvements
-
-- Playlist Creation
-- Shuffle Mode
-- Repeat Mode
-- Equalizer
-- Audio Visualizer
-- Drag & Drop Music Upload
-
 ## Author
 
 Shubham Verma
