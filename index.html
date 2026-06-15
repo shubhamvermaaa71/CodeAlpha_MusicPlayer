@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div>
+
+<div class="player">
+  <img id="cover" class="cover" src="https://picsum.photos/600">
+
+  <h2 id="title">Choose Music</h2>
+  <div id="artist" class="artist">Artist will appear here</div>
+
+  <div class="visualizer">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <input id="file" type="file" accept="audio/*">
+
+  <div class="progress" id="progress">
+    <div class="fill" id="fill"></div>
+  </div>
+  <div class="time">
+    <span id="cur">0:00</span>
+    <span id="dur">0:00</span>
+  </div>
+
+  <div class="controls">
+    <button class="iconBtn">
+      <svg viewBox="0 0 24 24"><path d="M15 18V6l-8 6z"/></svg>
+    </button>
+    <button id="play" class="iconBtn play">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <button class="iconBtn">
+      <svg viewBox="0 0 24 24"><path d="M9 18l8-6-8-6z"/></svg>
+    </button>
+  </div>
+
+  <div class="row">
+    <input id="vol" type="range" min="0" max="1" step="0.01" value="1">
+  </div>
+
+  <audio id="audio"></audio>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
